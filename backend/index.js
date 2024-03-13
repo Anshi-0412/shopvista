@@ -1,4 +1,6 @@
 const express = require("express");
+const mongoose = require("mongoose")
+
 const app = express();
 // const { MongoClient } = require('mongodb');
 
@@ -17,8 +19,9 @@ const PORT = 3000;
 //     } catch (error) {
 //         console.log('Error');
 //     } finally {
-//         await client.close();
+//         await client.close();-
 //     }
+
 // }   
 
 // run().catch(console.error);
@@ -26,4 +29,4 @@ const PORT = 3000;
 // Start server
 app.listen(PORT, () => {
     console.log('Server connected')
-});
+}); 
